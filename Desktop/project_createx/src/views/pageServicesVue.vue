@@ -46,31 +46,31 @@
             :imgSide="rightSide"
             title="Social Media Marketing"
             text="Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium. "
-            img="/images/socials/social.png"
+            img="/CreateX/images/socials/social.png"
           />
           <servicesVue
             :imgSide="leftSide"
             title="Search Engine Optimization"
             text="Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices aenean. Lacus sit viverra et egestas nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing. Nunc, tristique viverra tincidunt nec proin tempus egestas massa. Quis velit nunc nisl sem in tristique. "
-            img="/images/socials/search.png"
+            img="/CreateX/images/socials/search.png"
           />
           <servicesVue
             :imgSide="rightSide"
             title="Research Service"
             text="Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.  "
-            img="/images/socials/research.png"
+            img="/CreateX/images/socials/research.png"
           />
           <servicesVue
             :imgSide="leftSide"
             title="Content & PR Service"
             text="Consequat pharetra elit posuere fringilla luctus sit. Curabitur accumsan fermentum magna amet. Sed nec amet posuere tellus pellentesque vitae. Pulvinar nulla sem risus diam volutpat. Amet, sit aliquet magna in viverra at elit nullam.  "
-            img="/images/socials/content.png"
+            img="/CreateX/images/socials/content.png"
           />
           <servicesVue
             :imgSide="rightSide"
             title="Payed Traffic Management"
             text="Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.  "
-            img="/images/socials/payed.png"
+            img="/CreateX/images/socials/payed.png"
           />
         </div>
       </div>

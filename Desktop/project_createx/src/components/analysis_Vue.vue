@@ -114,7 +114,6 @@ $primary: #7772f1;
   font-size: 16px;
   line-height: 160%;
   color: white;
-  // opacity: 0.6;
 }
 
 .analysis__inputbox {
@@ -278,7 +277,7 @@ $primary: #7772f1;
   }
 
   .analysis__title {
-    font-size: 30px;
+    // font-size: 30px;
     margin-bottom: 16px;
   }
 
@@ -311,6 +310,12 @@ $primary: #7772f1;
 
   .analysis__urlbox {
     margin-bottom: 20px;
+  }
+}
+
+@media(max-width:450px) {
+  .analysis__title {
+    font-size: 30px;
   }
 }
 

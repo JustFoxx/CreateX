@@ -604,7 +604,7 @@ export default {
       draggable: false,
       waitForAnimate: false,
       customPaging: function (slider, i) {
-        return '<button><img src="/images/clients/point-primary.svg" /><img src="/images/clients/point-gray.svg" /></button>'
+        return '<button><img src="/CreateX/images/clients/point-primary.svg" /><img src="/CreateX/images/clients/point-gray.svg" /></button>'
       },
       responsive: [
         {
@@ -838,23 +838,6 @@ header {
   margin-top: -15vh;
 }
 
-.header__button-talk {
-  border-radius: 4px;
-  padding: 0px 40px;
-  width: 199px;
-  height: 52px;
-  background-color: $primary;
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  margin-left: auto;
-  border: 2px solid $primary;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
-}
-
 .header__title {
   font-weight: 900;
   font-size: 72px;
@@ -1001,7 +984,7 @@ header {
 .homepage-illustration {
   position: absolute;
   top: 25%;
-  right: 10vw;
+  right: 5vw;
   width: 30vw;
 }
 
@@ -1230,6 +1213,20 @@ header {
   .benefits__container {
     padding: 41px 50px 180px;
   }
+
+  .header__title {
+    max-width: 70vw;
+  }
+
+  .homepage-shape {
+    top: 24vw;
+    width: 55vw;
+  }
+
+  .homepage-illustration {
+    top: 34%;
+    width: 36vw;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1244,10 +1241,6 @@ header {
   .agency__img-right {
     display: flex;
     align-items: center;
-  }
-
-  .header__title {
-    font-size: 50px;
   }
 }
 
@@ -1300,12 +1293,12 @@ header {
     font-size: 36px;
   }
 
-  .agency__text {
-    font-size: 14px;
-  }
-
   .agency__shape {
     width: 77vw;
+  }
+
+  .benefits__title {
+    font-size: 36px;
   }
 
   .benefits__el {
@@ -1322,6 +1315,19 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 48px;
   }
+
+  .seo__item-text {
+    font-size: 18px;
+  }
+
+  .header__footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__footer-item p {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1329,12 +1335,18 @@ header {
     margin-top: 0;
   }
 
+  .header__title {
+    font-size: 56px;
+    min-width: 70vw;
+  }
+
   .homepage-illustration {
     display: none;
   }
 
-  .header__title {
-    max-width: 100vw;
+  .homepage-shape {
+    top: 34vw;
+    width: 72vw;
   }
 
   .seo__info {
@@ -1435,10 +1447,6 @@ header {
     font-size: 46px;
   }
 
-  .agency__container {
-    padding: 20px 20px 120px;
-  }
-
   .agency__content {
     gap: 40px;
   }
@@ -1477,6 +1485,14 @@ header {
     display: none;
   }
 
+  .agency__text {
+    font-size: 14px;
+  }
+
+  .seo__text {
+    font-size: 18px;
+  }
+
   .agency__container {
     padding: 30px 50px 90px;
   }
@@ -1485,9 +1501,9 @@ header {
     margin-bottom: 100px;
   }
 
-  // .case {
-  //   padding: 50px 0 0;
-  // }
+  .case {
+    padding: 50px 0 0;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1536,7 +1552,6 @@ header {
   }
 
   .benefits__title {
-    font-size: 40px;
     margin-bottom: 30px;
   }
 
@@ -1566,6 +1581,18 @@ header {
     font-size: 13px;
   }
 
+  .agency__text {
+    font-size: 12px;
+  }
+
+  .seo__text {
+    font-size: 16px;
+  }
+
+  .agency__title {
+    font-size: 30px;
+  }
+
   .seo__container {
     padding: 60px 20px 72px;
   }
@@ -1574,6 +1601,10 @@ header {
     img {
       width: 60px;
     }
+  }
+
+  .benefits__title {
+    font-size: 30px;
   }
 
   .benefits__el-title {
@@ -1600,12 +1631,21 @@ header {
     font-size: 29px;
   }
 
+  .agency__title {
+    font-size: 26px;
+  }
+
   .seo__info {
     gap: 20px;
   }
 
   .seo__info {
     margin-bottom: 35px;
+  }
+
+  .benefits__title {
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 
   .benefits__row {
@@ -1621,11 +1661,6 @@ header {
 
   .benefits__text {
     font-size: 14px;
-  }
-
-  .benefits__title {
-    font-size: 32px;
-    margin-bottom: 20px;
   }
 
   .clients {

@@ -697,11 +697,13 @@ $gray700: #787a80;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .case__title {
-    font-size: 32px;
+    font-size: 36px;
   }
+}
 
+@media (max-width: 900px) {
   .case__slide {
     padding: 20px 0;
   }
@@ -724,6 +726,14 @@ $gray700: #787a80;
 }
 
 @media (max-width: 800px) {
+  .case__title {
+    max-width: 65vw;
+  }
+
+  .case__text {
+    font-size: 14px;
+  }
+
   .case__logo {
     margin-bottom: 0;
   }
@@ -737,10 +747,6 @@ $gray700: #787a80;
   .case__box:last-child {
     height: 100%;
     justify-content: space-between;
-  }
-
-  .case__text {
-    font-size: 15px;
   }
 
   .case__diagrams {
@@ -776,7 +782,6 @@ $gray700: #787a80;
   }
 
   .case__title {
-    font-size: 26px;
     margin-bottom: 20px;
   }
 
@@ -799,10 +804,6 @@ $gray700: #787a80;
     margin: 20px 0;
   }
 
-  .case__text {
-    font-size: 18px;
-  }
-
   .case__box {
     padding: 0 30px;
   }
@@ -823,6 +824,11 @@ $gray700: #787a80;
 @media (max-width: 600px) {
   .case__title {
     margin-bottom: 70px;
+    max-width: 100vw;
+  }
+
+  .case__text {
+    font-size: 16px;
   }
 
   .case__slider_buttons {
@@ -854,12 +860,16 @@ $gray700: #787a80;
 }
 
 @media (max-width: 450px) {
+  .case__title {
+    font-size: 30px;
+  }
+
   .case__line {
     margin: 10px 0;
   }
 
   .case__text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .case__titlebox {
@@ -876,6 +886,10 @@ $gray700: #787a80;
 }
 
 @media (max-width: 400px) {
+  .case__title {
+    font-size: 26px;
+  }
+
   .case__diagrams {
     justify-content: space-between;
   }

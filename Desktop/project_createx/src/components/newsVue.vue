@@ -168,6 +168,12 @@ $gray700: #787a80;
   }
 }
 
+@media (max-width: 1000px) {
+  .news__title{
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 900px) {
   .news__info {
     width: 100%;
@@ -229,7 +235,7 @@ $gray700: #787a80;
   }
 }
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .news__container {
     padding-right: 20px;
     padding-left: 20px;
@@ -242,7 +248,7 @@ $gray700: #787a80;
   }
 
   .news__title {
-    font-size: 38px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
@@ -252,6 +258,10 @@ $gray700: #787a80;
 }
 
 @media (max-width: 400px) {
+  .news__title{
+    font-size: 26px;
+  }
+  
   .news__el-text {
     font-size: 15px;
   }

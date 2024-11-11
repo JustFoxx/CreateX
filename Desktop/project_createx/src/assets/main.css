@@ -1,6 +1,23 @@
+/* html {
+  transition: all 0s;
+  font-size: 62.5%;
+} */
+
 * {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
-  color: #1E212C;
-  transition: all .3s;
+  color: #1e212c;
+  transition: all 0.3s;
 }
+
+/* @media (max-width: 1100px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 48%;
+  }
+} */

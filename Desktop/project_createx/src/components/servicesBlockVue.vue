@@ -48,7 +48,7 @@
           gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras
           amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu
           dictum metus sed purus senectus faucibus eget elementum pretium."
-          img="/images/socials/social.png"
+          img="/CreateX/images/socials/social.png"
         />
       </div>
 
@@ -60,7 +60,7 @@
                 viverra et egestas nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing.
                 Nunc, tristique viverra tincidunt nec proin tempus egestas massa. Quis velit nunc nisl
                 sem in tristique."
-          img="/images/socials/search.png"
+          img="/CreateX/images/socials/search.png"
         />
       </div>
 
@@ -71,7 +71,7 @@
           text="Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla
                 lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa
                 vitae amet felis eget."
-          img="/images/socials/research.png"
+          img="/CreateX/images/socials/research.png"
         />
       </div>
 
@@ -82,7 +82,7 @@
           text="Consequat pharetra elit posuere fringilla luctus sit. Curabitur accumsan fermentum
                 magna amet. Sed nec amet posuere tellus pellentesque vitae. Pulvinar nulla sem risus
                 diam volutpat. Amet, sit aliquet magna in viverra at elit nullam."
-          img="/images/socials/content.png"
+          img="/CreateX/images/socials/content.png"
         />
       </div>
 
@@ -94,7 +94,7 @@
                 nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus
                 eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa
                 scelerisque."
-          img="/images/socials/payed.png"
+          img="/CreateX/images/socials/payed.png"
         />
       </div>
     </div>
@@ -161,95 +161,15 @@ $gray700: #787a80;
   color: $primary;
 }
 
-.services__info-title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 150%;
-  margin-bottom: 24px;
-}
-
-.services__info-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: $gray700;
-  margin-bottom: 48px;
-}
-
-.services__info-buttonbox {
-  display: flex;
-  gap: 24px;
-}
-
-.services__info-learn {
-  border: 2px solid $primary;
-  border-radius: 4px;
-  padding: 0px 32px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 314%;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: $primary;
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
-}
-
-.services__info-try {
-  border-radius: 4px;
-  padding: 0px 32px;
-  background-color: $primary;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 314%;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: white;
-  border: 2px solid $primary;
-  &:hover {
-    background-color: white;
-    color: $primary;
-  }
-}
-
-.services__info-text {
-  max-width: 475px;
-}
-
-.services__left {
-  animation-name: services__left;
-  animation-duration: 0.3s;
-}
-
-.services__right {
-  animation-name: services__right;
-  animation-duration: 0.3s;
-}
-
-@keyframes services__left {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes services__right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+@media (max-width: 1000px) {
+  .services__title {
+    font-size: 36px;
   }
 }
 
 @media (max-width: 750px) {
   .services__buttonbox {
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr 1fr;
   }
 
   .services__button {
@@ -277,10 +197,16 @@ $gray700: #787a80;
   }
 }
 
+@media (max-width: 450px) {
+  .services__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 400px) {
   .services__title {
-    font-size: 34px;
-    margin-bottom: 30px;
+    font-size: 26px;
   }
 
   .services__button {

@@ -35,7 +35,7 @@
         </form>
       </div>
       <img
-        :src="dark ? '/images/Blog/illustration-dark.png' : '/images/Blog/illustration.png'"
+        :src="dark ? '/CreateX/images/Blog/illustration-dark.png' : '/CreateX/images/Blog/illustration.png'"
         alt=""
         class="img"
       />

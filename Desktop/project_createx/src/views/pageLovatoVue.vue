@@ -488,6 +488,9 @@ header {
   line-height: 160%;
   text-align: left;
   color: $gray800;
+  img {
+    max-width: 17px;
+  }
 }
 
 .company__right {
@@ -580,7 +583,7 @@ header {
     bottom: 0vw;
     right: -9vw;
     width: 20vw;
-    z-index: 1;
+    z-index: -1;
     transform: rotateY(180deg);
   }
 }

@@ -133,12 +133,10 @@ $primary: #7772f1;
 
 @media (max-width: 850px) {
   .services__info-title {
-    font-size: 22px;
     margin-bottom: 14px;
   }
 
   .services__info-text {
-    font-size: 14px;
     margin-bottom: 30px;
   }
 
@@ -165,8 +163,28 @@ $primary: #7772f1;
   }
 }
 
+@media (max-width: 600px) {
+  .services__info-title {
+    font-size: 18px;
+  }
+
+  .services__info-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .services__info-title {
+    font-size: 16px;
+  }
+
+  .services__info-text {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 400px) {
-  .services__info-buttonbox{
+  .services__info-buttonbox {
     width: 80%;
     flex-direction: column;
   }

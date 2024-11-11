@@ -597,6 +597,12 @@ $gray600: #9a9ca5;
   }
 }
 
+@media(max-width:1000px) {
+  .plans__title{
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 900px) {
   .plans__side {
     padding: 40px 110px;
@@ -622,10 +628,6 @@ $gray600: #9a9ca5;
 }
 
 @media (max-width: 700px) {
-  .plans__title {
-    font-size: 40px;
-  }
-
   .plans__decor img {
     top: 56vw;
     width: 112vw;
@@ -638,7 +640,6 @@ $gray600: #9a9ca5;
   }
 
   .plans__title {
-    font-size: 36px;
     margin-bottom: 40px;
   }
 
@@ -687,9 +688,15 @@ $gray600: #9a9ca5;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .plans__title {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .plans__title {
+    font-size: 26px;
   }
 }
 </style>

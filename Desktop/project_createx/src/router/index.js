@@ -11,21 +11,20 @@ import MaximizeVue from '../views/pageMaximizeVue.vue'
 import ContactsVue from '../views/pageContactsVue.vue'
 
 export default createRouter({
-    scrollBehavior(to, from, savedPosition) {
-        return {top: 0}
-    },
-    mode: 'hash',
-    history: createWebHistory(),
-    routes: [
-        { path: '/home', component: pageHomeVue, alias: '/' },
-        { path: '/services', component: pageServicesVue },
-        { path: '/searchEngineOptimization', component: searchVue },
-        { path: '/caseStudies', component: caseVue },
-        { path: '/LovatoCompany', component: lovatoVue },
-        { path: '/About', component: AboutVue },
-        { path: '/Careers', component: CareersVue },
-        { path: '/Blog', component: BlogVue },
-        { path: '/MaximizeROI', component: MaximizeVue },
-        { path: '/Contacts', component: ContactsVue }
-    ]
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    { path: '/home', component: pageHomeVue, alias: '/' },
+    { path: '/services', component: pageServicesVue },
+    { path: '/searchEngineOptimization', component: searchVue },
+    { path: '/caseStudies', component: caseVue },
+    { path: '/LovatoCompany', component: lovatoVue },
+    { path: '/About', component: AboutVue },
+    { path: '/Careers', component: CareersVue },
+    { path: '/Blog', component: BlogVue },
+    { path: '/MaximizeROI', component: MaximizeVue },
+    { path: '/Contacts', component: ContactsVue }
+  ]
 })

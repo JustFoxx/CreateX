@@ -152,7 +152,7 @@ $gray700: #787a80;
   min-width: 48px;
   min-height: 48px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff00;
   &:hover {
     background-color: $primary;
     svg path {
@@ -173,7 +173,7 @@ $gray700: #787a80;
   min-width: 48px;
   min-height: 48px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff00;
   &:hover {
     background-color: $primary;
     svg path {
@@ -256,6 +256,10 @@ $gray700: #787a80;
 }
 
 @media (max-width: 1000px) {
+  .clients__title{
+    font-size: 36px;
+  }
+  
   .clients__prev {
     display: none;
   }
@@ -267,10 +271,6 @@ $gray700: #787a80;
   .clients__slider {
     max-width: none;
   }
-
-  // .clients__item {
-  //   margin: 0;
-  // }
 }
 
 @media (max-width: 900px) {
@@ -299,7 +299,6 @@ $gray700: #787a80;
   }
 
   .clients__title {
-    font-size: 34px;
     margin-bottom: 20px;
   }
 }
@@ -310,7 +309,6 @@ $gray700: #787a80;
   }
 
   .clients__title {
-    font-size: 28px;
     margin-bottom: 10px;
   }
 }
@@ -322,6 +320,10 @@ $gray700: #787a80;
 }
 
 @media (max-width: 450px) {
+  .clients__title{
+    font-size: 30px;
+  }
+  
   .clients__text {
     font-size: 12px;
   }
@@ -345,6 +347,12 @@ $gray700: #787a80;
 
   .clients__item {
     padding: 20px 20px;
+  }
+}
+
+@media(max-width:400px) {
+  .clients__title{
+    font-size: 26px;
   }
 }
 </style>

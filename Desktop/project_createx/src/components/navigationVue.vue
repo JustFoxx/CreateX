@@ -503,6 +503,7 @@ $primary: #7772f1;
   background-color: #0b0a21;
   padding: 20px 40px;
   border-radius: 4px;
+  z-index: 1000;
   ul {
     display: flex;
     flex-direction: column;
@@ -514,6 +515,9 @@ $primary: #7772f1;
     cursor: pointer;
     &:hover {
       opacity: 1;
+    }
+    a {
+      font-size: 16px;
     }
   }
 }
