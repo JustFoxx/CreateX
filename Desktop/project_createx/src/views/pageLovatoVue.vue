@@ -763,6 +763,10 @@ header {
   .header__container {
     padding-bottom: 0px;
   }
+
+  .header__location {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 450px) {

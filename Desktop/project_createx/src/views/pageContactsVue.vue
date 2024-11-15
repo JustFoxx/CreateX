@@ -838,6 +838,20 @@ input[type='range']::-webkit-slider-thumb {
   .ready__title {
     font-size: 32px;
   }
+
+  .form__price-left {
+    top: -35px;
+    margin-left: -19px;
+    padding: 2px 6px;
+    font-size: 11px;
+  }
+
+  .form__price-right {
+    top: -35px;
+    margin-right: -19px;
+    padding: 2px 6px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -901,6 +915,10 @@ input[type='range']::-webkit-slider-thumb {
     padding-bottom: 80px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .header__textbox div {
     font-size: 15px;
   }
@@ -933,6 +951,20 @@ input[type='range']::-webkit-slider-thumb {
 
   .form__row {
     gap: 20px;
+  }
+
+  .form__price-left {
+    top: -32px;
+    margin-left: -16px;
+    padding: 2px 6px;
+    font-size: 9px;
+  }
+
+  .form__price-right {
+    top: -32px;
+    margin-right: -16px;
+    padding: 2px 6px;
+    font-size: 9px;
   }
 }
 

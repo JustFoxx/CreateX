@@ -854,6 +854,7 @@ hr {
 
 .news__img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .news__el-info {
@@ -1184,6 +1185,11 @@ hr {
   .news__el-text {
     font-size: 17px;
   }
+
+  .news__img {
+    object-fit: cover;
+    max-height: 200px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1266,6 +1272,10 @@ hr {
     font-size: 14px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .categories__content {
     display: flex;
     flex-direction: column;
@@ -1332,6 +1342,10 @@ hr {
 
   .news__el-info {
     font-size: 11px;
+  }
+
+  .news__img {
+    max-height: 150px;
   }
 
   .news__container {

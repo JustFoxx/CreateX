@@ -994,6 +994,10 @@ header {
     font-size: 15px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .header__container {
     padding-bottom: 90px;
   }

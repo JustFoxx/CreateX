@@ -617,6 +617,10 @@ header {
     padding-bottom: 90px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .services__container {
     gap: 60px;
   }

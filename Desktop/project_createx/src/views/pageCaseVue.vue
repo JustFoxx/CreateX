@@ -1061,6 +1061,10 @@ header {
     padding-bottom: 90px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .header__form {
     flex-direction: column;
     width: calc(100vw - 40px);

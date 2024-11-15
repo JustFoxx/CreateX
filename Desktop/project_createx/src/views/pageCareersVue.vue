@@ -1557,6 +1557,10 @@ header {
     font-size: 15px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .questions__question {
     font-size: 16px;
   }

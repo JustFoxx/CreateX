@@ -1235,6 +1235,10 @@ hr {
 }
 
 @media (max-width: 500px) {
+  .header__location {
+    margin-top: 40px;
+  }
+
   .main__row1 {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -2493,6 +2493,10 @@ header {
     padding-bottom: 90px;
   }
 
+  .header__location {
+    margin-top: 40px;
+  }
+
   .diagrams {
     margin: 50px auto;
   }
