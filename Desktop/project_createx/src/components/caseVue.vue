@@ -520,23 +520,7 @@ $gray700: #787a80;
     background-color: #ffffff;
     transition: all 0.3s;
   }
-  &:hover {
-    &:after {
-      background-color: #ffffff00;
-    }
-    .case__slide-title {
-      color: white;
-    }
-    .case__text {
-      color: white;
-    }
-    .case__diagram-title {
-      color: white;
-    }
-    .case__diagram-subtitle {
-      color: white;
-    }
-  }
+  
 }
 
 .case__slide-inner {
@@ -567,12 +551,6 @@ $gray700: #787a80;
   height: 48px;
   border-radius: 50%;
   background-color: #ffffff00;
-  &:hover {
-    background-color: $primary;
-    svg path {
-      fill: white;
-    }
-  }
 }
 
 .case__slider-next {
@@ -585,12 +563,6 @@ $gray700: #787a80;
   background-color: #ffffff00;
   svg {
     transform: rotate(180deg);
-  }
-  &:hover {
-    background-color: $primary;
-    svg path {
-      fill: white;
-    }
   }
 }
 
@@ -685,10 +657,7 @@ $gray700: #787a80;
   text-align: center;
   color: white;
   border: 2px solid $primary;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
+  
 }
 
 @media (max-width: 1300px) {
@@ -924,6 +893,84 @@ $gray700: #787a80;
 
   .case__title {
     font-size: 20px;
+  }
+}
+
+@media(hover: hover) {
+  .case__slide:hover {
+    &:after {
+      background-color: #ffffff00;
+    }
+    .case__slide-title {
+      color: white;
+    }
+    .case__text {
+      color: white;
+    }
+    .case__diagram-title {
+      color: white;
+    }
+    .case__diagram-subtitle {
+      color: white;
+    }
+  }
+
+  .case__slider-prev:hover {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .case__slider-next:hover {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .case__footer-button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media(hover: none) {
+  .case__slide:active {
+    &:after {
+      background-color: #ffffff00;
+    }
+    .case__slide-title {
+      color: white;
+    }
+    .case__text {
+      color: white;
+    }
+    .case__diagram-title {
+      color: white;
+    }
+    .case__diagram-subtitle {
+      color: white;
+    }
+  }
+
+  .case__slider-prev:active {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .case__slider-next:active {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .case__footer-button:active {
+    background-color: #fff;
+    color: $primary;
   }
 }
 </style>

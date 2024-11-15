@@ -766,13 +766,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    &:hover {
-      opacity: 1;
-      &:after,
-      &:before {
-        width: 50%;
-      }
-    }
+
     &:after,
     &:before {
       content: '';
@@ -828,9 +822,6 @@ header {
     opacity: 0.6;
     color: white;
     cursor: pointer;
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 
@@ -866,10 +857,6 @@ header {
   line-height: 325%;
   letter-spacing: 0.03em;
   color: white;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
 }
 
 .header__buttonbox-play {
@@ -882,11 +869,6 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    &:hover {
-      &:after {
-        scale: 1.6;
-      }
-    }
     svg {
       margin-right: -2px;
     }
@@ -1106,10 +1088,6 @@ header {
   letter-spacing: 0.04em;
   text-align: center;
   color: white;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
 }
 
 // =============================BENEFITS=====================================
@@ -1162,13 +1140,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &:hover {
-    box-shadow:
-      0 4px 4px -4px rgba(30, 33, 44, 0.03),
-      0 12px 10px -6px rgba(154, 156, 165, 0.04),
-      0 30px 24px -10px rgba(154, 156, 165, 0.05),
-      0 80px 80px -20px rgba(154, 156, 165, 0.08);
-  }
 }
 
 .benefits__el-title {
@@ -1346,7 +1317,7 @@ header {
 
   .homepage-shape {
     top: 34vw;
-    width: 72vw;
+    width: 92vw;
   }
 
   .seo__info {
@@ -1403,6 +1374,10 @@ header {
 }
 
 @media (max-width: 800px) {
+  .agency__container {
+    padding-bottom: 110px;
+  }
+
   .agency__content {
     margin-bottom: 90px;
   }
@@ -1461,6 +1436,12 @@ header {
   }
 }
 
+@media (max-width: 650px) {
+  .agency__container {
+    padding: 30px 50px 90px;
+  }
+}
+
 @media (max-width: 600px) {
   .homepage-shapes {
     width: 45vw;
@@ -1493,16 +1474,8 @@ header {
     font-size: 18px;
   }
 
-  .agency__container {
-    padding: 30px 50px 90px;
-  }
-
   .agency__content {
     margin-bottom: 100px;
-  }
-
-  .case {
-    padding: 50px 0 0;
   }
 }
 
@@ -1529,7 +1502,8 @@ header {
   }
 
   .agency__container {
-    padding: 20px 20px 180px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .agency__content {
@@ -1665,6 +1639,82 @@ header {
 
   .clients {
     margin-bottom: 60px;
+  }
+}
+
+@media (hover: hover) {
+  .header__button-get:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .header__nav li:hover {
+    opacity: 1;
+    &:after,
+    &:before {
+      width: 50%;
+    }
+  }
+
+  .header__service li:hover {
+    opacity: 1;
+  }
+
+  .header__buttonbox-play button:hover {
+    &:after {
+      scale: 1.6;
+    }
+  }
+
+  .agency__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .benefits__el:hover {
+    box-shadow:
+      0 4px 4px -4px rgba(30, 33, 44, 0.03),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  }
+}
+
+@media (hover: none) {
+  .header__button-get:active {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .header__nav li:active {
+    opacity: 1;
+    &:after,
+    &:before {
+      width: 50%;
+    }
+  }
+
+  .header__service li:active {
+    opacity: 1;
+  }
+
+  .header__buttonbox-play button:active {
+    &:after {
+      scale: 1.6;
+    }
+  }
+
+  .agency__button:active {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .benefits__el:active {
+    box-shadow:
+      0 4px 4px -4px rgba(30, 33, 44, 0.03),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 80px 80px -20px rgba(154, 156, 165, 0.08);
   }
 }
 </style>

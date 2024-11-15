@@ -498,6 +498,8 @@ header {
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -563,10 +565,6 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     color: white;
-    &:hover {
-      background-color: #fff;
-      color: $primary;
-    }
   }
 }
 
@@ -588,10 +586,6 @@ header {
   color: $gray600;
   border-radius: 4px;
   background-color: #ffffff00;
-  &:hover {
-    border: 2px solid $primary;
-    color: $primary;
-  }
 }
 
 .sort__buttonact {
@@ -780,9 +774,6 @@ header {
   display: flex;
   gap: 8px;
   background-color: #ffffff00;
-  &:hover {
-    gap: 16px;
-  }
 }
 
 @keyframes sort {
@@ -896,6 +887,32 @@ header {
     font-size: 46px;
   }
 
+  .header__dots {
+    display: none;
+  }
+
+  .header__lines {
+    top: -19vw;
+    width: 40vw;
+  }
+
+  .header__lines-left {
+    top: 12vw;
+    width: 6vw;
+  }
+
+  .header__shapes {
+    top: 0vw;
+    left: -7vw;
+    width: 23vw;
+    transform: rotateZ(180deg);
+  }
+
+  .header__shapes2 {
+    bottom: -20vw;
+    width: 41vw;
+  }
+
   .sort__info p {
     font-size: 14px;
   }
@@ -997,6 +1014,30 @@ header {
     padding-left: 20px;
   }
 
+  .header__lines {
+    top: -28vw;
+    width: 60vw;
+    right: 0;
+  }
+
+  .header__lines-left {
+    display: none;
+  }
+
+  .header__lines-right {
+    display: none;
+  }
+
+  .header__shapes {
+    top: 10vw;
+    width: 28vw;
+  }
+
+  .header__shapes2 {
+    width: 50vw;
+    right: -10vw;
+  }
+
   .sort__container {
     padding-right: 20px;
     padding-left: 20px;
@@ -1028,6 +1069,14 @@ header {
     }
   }
 
+  .header__form input {
+    font-size: 14px;
+  }
+
+  .header__form button {
+    font-size: 14px;
+  }
+
   .logos {
     padding: 40px 0 40px;
   }
@@ -1046,6 +1095,18 @@ header {
   .sort__info p {
     font-size: 14px;
   }
+
+  .header__lines {
+    display: none;
+  }
+
+  .header__shapes {
+    display: none;
+  }
+
+  .header__shapes2 {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1053,8 +1114,48 @@ header {
     font-size: 33px;
   }
 
+  .header__form input {
+    font-size: 13px;
+  }
+
+  .header__form button {
+    font-size: 13px;
+  }
+
   .clients {
     padding: 0 0 10px 0;
+  }
+}
+
+@media (hover: hover) {
+  .header__form button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .sort__button:hover {
+    border: 2px solid $primary;
+    color: $primary;
+  }
+
+  .sort__el-button:hover {
+    gap: 16px;
+  }
+}
+
+@media (hover: none) {
+  .header__form button:active {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .sort__button:active {
+    border: 2px solid $primary;
+    color: $primary;
+  }
+
+  .sort__el-button:active {
+    gap: 16px;
   }
 }
 </style>

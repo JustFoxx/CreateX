@@ -153,12 +153,7 @@ $gray700: #787a80;
   min-height: 48px;
   border-radius: 50%;
   background-color: #ffffff00;
-  &:hover {
-    background-color: $primary;
-    svg path {
-      fill: white;
-    }
-  }
+  
   svg {
     z-index: 2;
   }
@@ -174,12 +169,7 @@ $gray700: #787a80;
   min-height: 48px;
   border-radius: 50%;
   background-color: #ffffff00;
-  &:hover {
-    background-color: $primary;
-    svg path {
-      fill: white;
-    }
-  }
+  
 }
 
 .clients__slider {
@@ -353,6 +343,38 @@ $gray700: #787a80;
 @media(max-width:400px) {
   .clients__title{
     font-size: 26px;
+  }
+}
+
+@media(hover: hover) {
+  .clients__prev:hover {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .clients__next:hover {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+}
+
+@media(hover: none) {
+  .clients__prev:active {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
+  }
+
+  .clients__next:active {
+    background-color: $primary;
+    svg path {
+      fill: white;
+    }
   }
 }
 </style>

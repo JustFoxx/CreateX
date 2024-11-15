@@ -64,10 +64,7 @@ $primary: #7772f1;
   color: $primary;
   background-color: #ffffff00;
   text-wrap: nowrap;
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
+  
 }
 
 .services__info-try {
@@ -82,10 +79,7 @@ $primary: #7772f1;
   color: white;
   border: 2px solid $primary;
   text-wrap: nowrap;
-  &:hover {
-    background-color: white;
-    color: $primary;
-  }
+  
 }
 
 .services__page {
@@ -187,6 +181,30 @@ $primary: #7772f1;
   .services__info-buttonbox {
     width: 80%;
     flex-direction: column;
+  }
+}
+
+@media(hover: hover) {
+  .services__info-learn:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  .services__info-try:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+@media(hover: none) {
+  .services__info-learn:active {
+    background-color: $primary;
+    color: white;
+  }
+
+  .services__info-try:active {
+    background-color: white;
+    color: $primary;
   }
 }
 </style>

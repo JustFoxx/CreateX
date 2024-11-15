@@ -312,6 +312,8 @@ header {
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -357,10 +359,7 @@ header {
   text-align: center;
   color: white;
   background-color: #ffffff00;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
+  
 }
 
 .header__call {
@@ -502,7 +501,7 @@ header {
   }
 
   .header__title {
-    font-size: 68px;
+    font-size: 60px;
   }
 
   .header__dots {
@@ -549,7 +548,7 @@ header {
 
 @media (max-width: 650px) {
   .header__title {
-    font-size: 58px;
+    font-size: 50px;
   }
 }
 
@@ -607,7 +606,7 @@ header {
 
 @media (max-width: 500px) {
   .header__title {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .header__text {
@@ -705,6 +704,20 @@ header {
   .markets__title {
     font-size: 28px;
     margin-bottom: 40px;
+  }
+}
+
+@media(hover:hover) {
+  .header__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media(hover:none) {
+  .header__button:active {
+    background-color: #fff;
+    color: $primary;
   }
 }
 </style>

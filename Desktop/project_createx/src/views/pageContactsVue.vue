@@ -20,30 +20,38 @@
         </div>
         <div class="header__title">Contacts</div>
         <div class="header__contact">
-          <img src="/images/Contacts/outline.svg" alt="" />
-          <div class="header__textbox">
-            <div class="header__contact-title">Visit us</div>
-            <p>2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
-            <a href="#" class="header__visit-a">See on the map</a>
+          <div class="header__contact-visit">
+            <img src="/images/Contacts/outline.svg" alt="" />
+            <div class="header__textbox">
+              <div class="header__contact-title">Visit us</div>
+              <p>2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
+              <a href="#" class="header__visit-a">See on the map</a>
+            </div>
           </div>
           <div class="header__line"></div>
-          <img src="/images/Careers/phone.svg" alt="" />
-          <div class="header__textbox">
-            <div class="header__contact-title">Call us</div>
-            <div><a class="header__call-a" href="tel:(405) 555-0128">(405) 555-0128</a></div>
-            <div><a class="header__call-a" href="tel:(405) 555-0128">(405) 555-0128</a></div>
+          <div class="header__contact-call">
+            <img src="/images/Careers/phone.svg" alt="" />
+            <div class="header__textbox">
+              <div class="header__contact-title">Call us</div>
+              <div><a class="header__call-a" href="tel:(405) 555-0128">(405) 555-0128</a></div>
+              <div><a class="header__call-a" href="tel:(405) 555-0128">(405) 555-0128</a></div>
+            </div>
           </div>
           <div class="header__line"></div>
-          <img src="/images/Careers/chat.svg" alt="" />
-          <div class="header__textbox">
-            <div class="header__contact-title">Talk to us</div>
-            <div><a class="header__call-a" href="#">hello@createx.com</a></div>
+          <div class="header__contact-talk">
+            <img src="/images/Careers/chat.svg" alt="" />
+            <div class="header__textbox">
+              <div class="header__contact-title">Talk to us</div>
+              <div><a class="header__call-a" href="#">hello@createx.com</a></div>
+            </div>
           </div>
           <div class="header__line"></div>
-          <img src="/images/Contacts/clock.svg" alt="" />
-          <div class="header__textbox">
-            <div class="header__contact-title">Working Hours</div>
-            <div>Mon-Fri: 9 am — 6 pm Sat-Sun: days off</div>
+          <div class="header__contact-working">
+            <img src="/images/Contacts/clock.svg" alt="" />
+            <div class="header__textbox">
+              <div class="header__contact-title">Working Hours</div>
+              <div>Mon-Fri: 9 am — 6 pm Sat-Sun: days off</div>
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +162,7 @@ export default {
     return {
       headerService: false,
       navigationActive: 5,
-      headerBurger: false,
+      headerBurger: false
     }
   },
   methods: {
@@ -278,15 +286,17 @@ header {
 }
 
 .header__container {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
-  padding: 20px 20px 120px;
+  padding: 20px 50px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -305,9 +315,43 @@ header {
 }
 
 .header__contact {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  gap: 40px;
   img {
     margin-right: 12px;
+  }
+}
+
+.header__contact-visit {
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
+  }
+}
+
+.header__contact-call {
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
+  }
+}
+
+.header__contact-talk {
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
+  }
+}
+
+.header__contact-working {
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
   }
 }
 
@@ -352,7 +396,7 @@ header {
 .header__line {
   width: 1px;
   min-height: 100%;
-  margin: 0 40px;
+  // margin: 0 40px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     135deg,
@@ -363,11 +407,13 @@ header {
 }
 
 .ready__container {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 100px auto 180px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 199px;
+  gap: 150px;
+  padding-right: 50px;
+  padding-left: 50px;
   p {
     font-weight: 400;
     font-size: 16px;
@@ -375,6 +421,10 @@ header {
     color: $gray800;
     margin-bottom: 8px;
   }
+}
+
+.ready__img {
+  width: 100%;
 }
 
 .ready__title {
@@ -400,11 +450,6 @@ header {
   line-height: 150%;
   color: $gray700;
   text-wrap: nowrap;
-  &:hover {
-    border: 1px solid $primary;
-    color: #ffffff;
-    background-color: $primary;
-  }
 }
 
 .form__inputs {
@@ -660,7 +705,316 @@ input[type='range']::-webkit-slider-thumb {
   text-align: center;
   color: white;
   text-wrap: nowrap;
-  &:hover {
+}
+
+@media (max-width: 1300px) {
+  .header__contact {
+    display: grid;
+    grid-template-columns: auto 1px auto 1px auto 1px auto;
+    gap: 30px;
+    img {
+      margin-right: 12px;
+    }
+  }
+
+  .ready__img {
+    display: none;
+  }
+
+  .ready__container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .ready__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__title {
+    font-size: 62px;
+  }
+
+  .header__contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    align-self: start;
+    img {
+      margin-right: 12px;
+    }
+
+    .header__line {
+      display: none;
+    }
+  }
+
+  .header__lines {
+    top: -4vw;
+    left: -18vw;
+    width: 40vw;
+  }
+
+  .header__shapes {
+    top: -11vw;
+    right: 28vw;
+    width: 17vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__dots {
+    display: none;
+  }
+
+  .header__shapes {
+    top: 34vw;
+    right: -6vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__lines {
+    top: 1vw;
+    left: -18vw;
+    width: 44vw;
+  }
+
+  .header__shapes {
+    top: 49vw;
+    right: -6vw;
+    width: 19vw;
+  }
+
+  .header__shapes {
+    top: 96vw;
+    right: -6vw;
+    width: 23vw;
+  }
+
+  .header__lines {
+    top: 1vw;
+    left: -21vw;
+    width: 52vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .form__inputs {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin-bottom: 24px;
+  }
+
+  .form__row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    button {
+      max-width: 224px;
+    }
+  }
+
+  .ready__buttonbox {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .ready__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__shapes {
+    display: none;
+  }
+
+  .header__lines {
+    display: none;
+  }
+
+  .ready__button {
+    font-size: 12px;
+  }
+
+  .ready__buttonbox {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .ready__title {
+    font-size: 28px;
+  }
+
+  .ready__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .form__label {
+    font-size: 14px;
+  }
+
+  .form__input {
+    font-size: 15px;
+  }
+
+  .form__button {
+    max-width: 211px;
+    font-size: 14px;
+  }
+
+  .ready__title {
+    margin-bottom: 30px;
+  }
+
+  .ready__container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__container {
+    padding-bottom: 80px;
+  }
+
+  .header__textbox div {
+    font-size: 15px;
+  }
+
+  .header__textbox p {
+    font-size: 15px;
+  }
+
+  .header__visit-a {
+    font-size: 15px;
+  }
+
+  .header__call-a {
+    font-size: 15px;
+  }
+
+  .header__title {
+    margin-bottom: 40px;
+  }
+
+  .header__contact {
+    gap: 0;
+  }
+
+  .agreebox {
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .form__row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__container {
+    padding-bottom: 60px;
+  }
+
+  .ready__container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .agreebox {
+    label {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 34px;
+  }
+
+  .header__textbox p {
+    font-size: 12px;
+  }
+
+  .header__call-a {
+    font-size: 12px;
+  }
+
+  .header__textbox div {
+    font-size: 12px;
+  }
+
+  .header__visit-a {
+    font-size: 12px;
+  }
+
+  .header__contact img {
+    width: 35px;
+  }
+
+  .form__label {
+    font-size: 12px;
+  }
+
+  .form__input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .agreebox {
+    label {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .ready__button:hover {
+    border: 1px solid $primary;
+    color: #ffffff;
+    background-color: $primary;
+  }
+
+  .form__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media (hover: none) {
+  .ready__button:active {
+    border: 1px solid $primary;
+    color: #ffffff;
+    background-color: $primary;
+  }
+
+  .form__button:active {
     background-color: #fff;
     color: $primary;
   }

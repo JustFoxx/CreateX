@@ -77,8 +77,49 @@ $gray800: #424551;
   gap: 8px;
   background-color: #ffffff00;
   align-items: center;
-  &:hover {
-    gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .info {
+    font-size: 13px;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .text {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img {
+    max-height: 200px;
+    object-fit: cover;
   }
 }
 
@@ -88,6 +129,18 @@ $gray800: #424551;
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    gap: 16px;
+  }
+}
+
+@media (hover: none) {
+  .button:active {
+    gap: 16px;
   }
 }
 </style>

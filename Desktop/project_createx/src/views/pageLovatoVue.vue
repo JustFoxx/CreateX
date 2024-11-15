@@ -346,6 +346,8 @@ header {
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 32px;
   font-weight: 400;
   font-size: 14px;
@@ -537,11 +539,6 @@ header {
   line-height: 150%;
   color: $gray700;
   background-color: #ffffff00;
-  &:hover {
-    border: 1px solid $primary;
-    background-color: $primary;
-    color: #fff;
-  }
 }
 
 .company__sharebox {
@@ -556,9 +553,6 @@ header {
   display: flex;
   gap: 12px;
   align-items: center;
-  svg:hover path {
-    fill: $primary;
-  }
 }
 
 .company__right-shapes {
@@ -817,6 +811,30 @@ header {
 
   .company__marks-el {
     font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .company__button:hover {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: #fff;
+  }
+
+  .company__logos svg:hover path {
+    fill: $primary;
+  }
+}
+
+@media (hover: none) {
+  .company__button:active {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: #fff;
+  }
+
+  .company__logos svg:active path {
+    fill: $primary;
   }
 }
 </style>

@@ -582,7 +582,7 @@
                   />
                 </svg>
                 <svg
-                  :style="{ opacity: questionsActive[3] ? '0' : '1' }"
+                  :style="{ opacity: questionsActive[4] ? '0' : '1' }"
                   class="questions__plus-second"
                   width="20"
                   height="2"
@@ -926,6 +926,8 @@ header {
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -1023,9 +1025,11 @@ header {
 
 .questions__container {
   display: flex;
-  max-width: 1230px;
+  max-width: 1330px;
   padding: 100px 0;
   margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .questions__box {
@@ -1087,10 +1091,6 @@ header {
     letter-spacing: 0.04em;
     text-align: center;
     color: $primary;
-    &:hover {
-      background-color: $primary;
-      color: white;
-    }
   }
 }
 
@@ -1146,12 +1146,14 @@ header {
 }
 
 .find__container {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 100px 0 180px;
   gap: 135px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .find__title {
@@ -1256,17 +1258,11 @@ header {
 .find__select-el-act {
   display: flex;
   padding: 13px 16px;
-  &:hover {
-    background-color: #e2e3e3;
-  }
 }
 
 .find__select-el {
   display: flex;
   padding: 0px 16px;
-  &:hover {
-    background-color: #e2e3e3;
-  }
 }
 
 .find__attach {
@@ -1327,7 +1323,441 @@ header {
   text-align: center;
   color: white;
   margin-top: 40px;
-  &:hover {
+}
+
+@media (max-width: 1300px) {
+  .find__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  .find__title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__title {
+    font-size: 62px;
+  }
+
+  .find__container {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 70px;
+  }
+
+  .find__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .find__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .find__container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__title {
+    font-size: 40px;
+  }
+
+  .header__text {
+    font-size: 17px;
+    max-width: none;
+  }
+
+  .header__dots {
+    display: none;
+  }
+
+  .header__lines-left {
+    bottom: 40vw;
+    right: 15vw;
+    width: 6vw;
+  }
+
+  .header__lines-right {
+    left: 10vw;
+  }
+
+  .header__lines4 {
+    width: 45vw;
+    right: -13vw;
+  }
+
+  .header__shapes {
+    top: 12vw;
+    left: -4vw;
+    width: 19vw;
+  }
+
+  .header__shapes2 {
+    right: -12vw;
+    bottom: -6vw;
+  }
+
+  .questions__question {
+    font-size: 24px;
+  }
+
+  .find__container {
+    grid-template-columns: 1fr;
+  }
+
+  .find__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .find__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__title {
+    font-size: 34px;
+  }
+
+  .header__lines-left {
+    width: 8vw;
+  }
+
+  .header__lines-right {
+    width: 9vw;
+  }
+
+  .header__lines4 {
+    width: 52vw;
+  }
+
+  .header__shapes {
+    width: 23vw;
+    top: 27vw;
+  }
+
+  .header__shapes2 {
+    width: 37vw;
+  }
+
+  .questions__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .questions__question {
+    font-size: 20px;
+    button {
+      font-size: 12px;
+      text-wrap: nowrap;
+      max-height: 39.28px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header__contact {
+    img {
+      width: 35px;
+    }
+  }
+
+  .header__contact-title {
+    font-size: 12px;
+  }
+
+  .header__textbox a {
+    font-size: 14px;
+  }
+
+  .header__line {
+    margin: 0 30px;
+  }
+
+  .find__container {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .find__title {
+    font-size: 32px;
+  }
+
+  .find__subtitle {
+    font-size: 18px;
+  }
+
+  .find__button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__lines-left {
+    width: 11vw;
+  }
+
+  .header__lines-right {
+    width: 13vw;
+    bottom: 102vw;
+  }
+
+  .header__lines4 {
+    width: 60vw;
+  }
+
+  .header__shapes {
+    display: none;
+  }
+
+  .header__shapes2 {
+    width: 42vw;
+  }
+
+  .questions__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .questions__row {
+    gap: 15px;
+  }
+
+  .questions__plus {
+    margin-top: 6px;
+  }
+
+  .find__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .find__title {
+    font-size: 28px;
+  }
+
+  .find__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 28px;
+  }
+
+  .header__text {
+    font-size: 15px;
+  }
+
+  .questions__question {
+    font-size: 16px;
+  }
+
+  .questions__plus {
+    margin-top: 4px;
+    svg {
+      scale: 0.8;
+    }
+  }
+
+  .questions__question button {
+    padding: 0px 27px;
+    font-size: 12px;
+    line-height: 282%;
+    max-height: 35.44px;
+  }
+
+  .questions__text {
+    p {
+      font-size: 14px;
+    }
+
+    ul li {
+      font-size: 14px;
+    }
+  }
+
+  .questions__row {
+    gap: 10px;
+  }
+
+  .find__row {
+    gap: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__lines-left {
+    display: none;
+  }
+
+  .header__lines-right {
+    display: none;
+  }
+
+  .header__lines4 {
+    display: none;
+  }
+
+  .header__shapes {
+    display: none;
+  }
+
+  .header__shapes2 {
+    display: none;
+  }
+
+  .header__line {
+    display: none;
+  }
+
+  .header__container {
+    padding-bottom: 80px;
+  }
+
+  .header__contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .header__contact {
+    img {
+      width: 40px;
+      margin: auto 0;
+    }
+  }
+
+  .header__contact-title {
+    font-size: 16px;
+  }
+
+  .header__textbox a {
+    font-size: 18px;
+  }
+
+  .find__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 23px;
+  }
+
+  .header__contact {
+    grid-template-columns: 35px auto;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .header__contact {
+    img {
+      width: 35px;
+      margin: auto 0;
+    }
+  }
+
+  .header__contact-title {
+    font-size: 14px;
+  }
+
+  .header__textbox a {
+    font-size: 16px;
+  }
+
+  .questions__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .questions__question {
+    font-size: 14px;
+  }
+
+  .questions__plus {
+    margin-top: 0px;
+  }
+
+  .questions__text {
+    p {
+      font-size: 13px;
+    }
+
+    ul li {
+      font-size: 13px;
+    }
+  }
+
+  .questions__question button {
+    padding: 0px 25px;
+    font-size: 11px;
+    line-height: 270%;
+    max-height: 31.3px;
+  }
+
+  .find__container{
+    padding-bottom: 60px;
+  }
+
+  .find__label {
+    font-size: 14px;
+  }
+
+  .find__input {
+    font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .questions__question button:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  .find__select-el-act:hover {
+    background-color: #e2e3e3;
+  }
+
+  .find__select-el:hover {
+    background-color: #e2e3e3;
+  }
+
+  .find__button:hover {
+    color: $primary;
+    background-color: #fff;
+  }
+}
+
+@media (hover: none) {
+  .questions__question button:active {
+    background-color: $primary;
+    color: white;
+  }
+
+  .find__select-el-act:active {
+    background-color: #e2e3e3;
+  }
+
+  .find__select-el:active {
+    background-color: #e2e3e3;
+  }
+
+  .find__button:active {
     color: $primary;
     background-color: #fff;
   }

@@ -35,7 +35,11 @@
         </form>
       </div>
       <img
-        :src="dark ? '/CreateX/images/Blog/illustration-dark.png' : '/CreateX/images/Blog/illustration.png'"
+        :src="
+          dark
+            ? '/CreateX/images/Blog/illustration-dark.png'
+            : '/CreateX/images/Blog/illustration.png'
+        "
         alt=""
         class="img"
       />
@@ -78,11 +82,13 @@ $gray600: #9a9ca5;
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 100px 0 120px;
   display: flex;
   justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .info {
@@ -177,7 +183,149 @@ label {
   text-align: center;
   color: white;
   border: 1px solid $primary;
-  &:hover {
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    img {
+      width: 400px;
+    }
+  }
+
+  .info {
+    max-width: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    max-width: 600px;
+  }
+
+  .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
+
+  .input {
+    font-size: 13px;
+  }
+
+  .form__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .agree + label:before {
+    min-width: 14px;
+    min-height: 14px;
+    margin-right: 8px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .form__button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  label {
+    font-size: 11px;
+  }
+
+  .input {
+    padding: 8px 10px;
+  }
+
+  .form__button {
+    padding: 0px 28px;
+    line-height: 283%;
+  }
+}
+
+@media (hover: hover) {
+  .form__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media (hover: none) {
+  .form__button:active {
     background-color: #fff;
     color: $primary;
   }

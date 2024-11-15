@@ -306,9 +306,7 @@ $primary: #7772f1;
     line-height: 150%;
     color: #ffffff;
     opacity: 0.7;
-    &:hover {
-      opacity: 1;
-    }
+
     cursor: pointer;
   }
 }
@@ -321,9 +319,7 @@ $primary: #7772f1;
   line-height: 150%;
   color: #ffffff;
   opacity: 0.7;
-  &:hover {
-    opacity: 1;
-  }
+
   cursor: pointer;
 }
 
@@ -340,9 +336,6 @@ $primary: #7772f1;
     overflow: hidden;
     color: #fff;
     opacity: 0.7;
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 
@@ -396,15 +389,6 @@ $primary: #7772f1;
     left: 0;
     transition: all 0.3s;
   }
-  &:hover {
-    &:before {
-      top: -15px;
-      left: -15px;
-      width: 78px;
-      height: 78px;
-      transition: all 0.3s;
-    }
-  }
 }
 
 .nav__active {
@@ -450,13 +434,7 @@ $primary: #7772f1;
     display: flex;
     align-items: center;
     position: relative;
-    &:hover {
-      opacity: 1;
-      &:after,
-      &:before {
-        width: 50%;
-      }
-    }
+
     &:after,
     &:before {
       content: '';
@@ -513,9 +491,6 @@ $primary: #7772f1;
     opacity: 0.6;
     color: white;
     cursor: pointer;
-    &:hover {
-      opacity: 1;
-    }
     a {
       font-size: 16px;
     }
@@ -532,10 +507,6 @@ $primary: #7772f1;
   color: white;
   margin-left: auto;
   border: 2px solid $primary;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -565,7 +536,7 @@ $primary: #7772f1;
   }
 
   .header__serv {
-    font-size: 32px;
+    font-size: 26px;
     gap: 5px;
     svg {
       width: 24px;
@@ -579,7 +550,7 @@ $primary: #7772f1;
 
   .header__side-ul {
     li {
-      font-size: 32px;
+      font-size: 26px;
     }
   }
 
@@ -611,6 +582,99 @@ $primary: #7772f1;
     li {
       font-size: 26px;
     }
+  }
+
+  .header__button-talk {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 350px) {
+  .button__up img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (hover: hover) {
+  .header__side-ul li:hover {
+    opacity: 1;
+  }
+
+  .header__serv:hover {
+    opacity: 1;
+  }
+
+  .header__serv-text div:hover {
+    opacity: 1;
+  }
+
+  .button__up:hover {
+    &:before {
+      top: -15px;
+      left: -15px;
+      width: 78px;
+      height: 78px;
+      transition: all 0.3s;
+    }
+  }
+
+  .header__nav li:hover {
+    opacity: 1;
+    &:after,
+    &:before {
+      width: 50%;
+    }
+  }
+
+  .header__service li:hover {
+    opacity: 1;
+  }
+
+  .header__button-talk:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media (hover: none) {
+  .header__side-ul li:active {
+    opacity: 1;
+  }
+
+  .header__serv:active {
+    opacity: 1;
+  }
+
+  .header__serv-text div:active {
+    opacity: 1;
+  }
+
+  .button__up:active {
+    &:before {
+      top: -15px;
+      left: -15px;
+      width: 78px;
+      height: 78px;
+      transition: all 0.3s;
+    }
+  }
+
+  .header__nav li:active {
+    opacity: 1;
+    &:after,
+    &:before {
+      width: 50%;
+    }
+  }
+
+  .header__service li:active {
+    opacity: 1;
+  }
+
+  .header__button-talk:active {
+    background-color: #fff;
+    color: $primary;
   }
 }
 </style>

@@ -134,102 +134,100 @@
             </button>
           </div>
         </div>
-        <div class="categories__column">
-          <div class="categories__blog">
-            <div class="categories__blog-title">Blog Categories</div>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'all'), activeEl()"
-              :style="{ color: activeClass === 'all' ? '#7772f1' : '#424551' }"
-            >
-              All
-              <p :style="{ color: activeClass === 'all' ? '#7772f1' : '#424551' }">24</p>
-            </button>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'media'), activeEl()"
-              :style="{ color: activeClass === 'media' ? '#7772f1' : '#424551' }"
-            >
-              Media & Press
-              <p :style="{ color: activeClass === 'media' ? '#7772f1' : '#424551' }">3</p>
-            </button>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'ad'), activeEl()"
-              :style="{ color: activeClass === 'ad' ? '#7772f1' : '#424551' }"
-            >
-              Ad Tips
-              <p :style="{ color: activeClass === 'ad' ? '#7772f1' : '#424551' }">7</p>
-            </button>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'marketing'), activeEl()"
-              :style="{ color: activeClass === 'marketing' ? '#7772f1' : '#424551' }"
-            >
-              Marketing
-              <p :style="{ color: activeClass === 'marketing' ? '#7772f1' : '#424551' }">4</p>
-            </button>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'seo'), activeEl()"
-              :style="{ color: activeClass === 'seo' ? '#7772f1' : '#424551' }"
-            >
-              SEO
-              <p :style="{ color: activeClass === 'seo' ? '#7772f1' : '#424551' }">8</p>
-            </button>
-            <button
-              class="categories__blog-row"
-              @click="(activeClass = 'paid'), activeEl()"
-              :style="{ color: activeClass === 'paid' ? '#7772f1' : '#424551' }"
-            >
-              Paid Search
-              <p :style="{ color: activeClass === 'paid' ? '#7772f1' : '#424551' }">2</p>
-            </button>
-          </div>
-          <div class="categories__trending">
-            <div class="categories__trending-title">Now Trending</div>
-            <div class="categories__trending-row">
-              <img class="categories__trending-img" src="/images/Blog/img1.jpg" alt="" />
-              <div class="categories__trending-info">
-                <div class="categories__trending-date">
-                  <img src="/images/news/clock.svg" alt="" />&nbsp;July 5, 2020
-                </div>
-                <div class="categories__trending-text">
-                  5 Surprising Ways to Combine Content Marketing with PPC
-                </div>
+        <div class="categories__blog">
+          <div class="categories__blog-title">Blog Categories</div>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'all'), activeEl()"
+            :style="{ color: activeClass === 'all' ? '#7772f1' : '#424551' }"
+          >
+            All
+            <p :style="{ color: activeClass === 'all' ? '#7772f1' : '#424551' }">24</p>
+          </button>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'media'), activeEl()"
+            :style="{ color: activeClass === 'media' ? '#7772f1' : '#424551' }"
+          >
+            Media & Press
+            <p :style="{ color: activeClass === 'media' ? '#7772f1' : '#424551' }">3</p>
+          </button>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'ad'), activeEl()"
+            :style="{ color: activeClass === 'ad' ? '#7772f1' : '#424551' }"
+          >
+            Ad Tips
+            <p :style="{ color: activeClass === 'ad' ? '#7772f1' : '#424551' }">7</p>
+          </button>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'marketing'), activeEl()"
+            :style="{ color: activeClass === 'marketing' ? '#7772f1' : '#424551' }"
+          >
+            Marketing
+            <p :style="{ color: activeClass === 'marketing' ? '#7772f1' : '#424551' }">4</p>
+          </button>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'seo'), activeEl()"
+            :style="{ color: activeClass === 'seo' ? '#7772f1' : '#424551' }"
+          >
+            SEO
+            <p :style="{ color: activeClass === 'seo' ? '#7772f1' : '#424551' }">8</p>
+          </button>
+          <button
+            class="categories__blog-row"
+            @click="(activeClass = 'paid'), activeEl()"
+            :style="{ color: activeClass === 'paid' ? '#7772f1' : '#424551' }"
+          >
+            Paid Search
+            <p :style="{ color: activeClass === 'paid' ? '#7772f1' : '#424551' }">2</p>
+          </button>
+        </div>
+        <div class="categories__trending">
+          <div class="categories__trending-title">Now Trending</div>
+          <div class="categories__trending-row">
+            <img class="categories__trending-img" src="/images/Blog/img1.jpg" alt="" />
+            <div class="categories__trending-info">
+              <div class="categories__trending-date">
+                <img src="/images/news/clock.svg" alt="" />&nbsp;July 5, 2020
               </div>
-            </div>
-            <div class="categories__trending-row">
-              <img class="categories__trending-img" src="/images/Blog/img2.jpg" alt="" />
-              <div class="categories__trending-info">
-                <div class="categories__trending-date">
-                  <img src="/images/news/clock.svg" alt="" />&nbsp;April 9, 2020
-                </div>
-                <div class="categories__trending-text">Why SEO Is All About Content Marketing?</div>
-              </div>
-            </div>
-            <div class="categories__trending-row">
-              <img class="categories__trending-img" src="/images/Blog/img3.jpg" alt="" />
-              <div class="categories__trending-info">
-                <div class="categories__trending-date">
-                  <img src="/images/news/clock.svg" alt="" />&nbsp;March 12, 2020
-                </div>
-                <div class="categories__trending-text">
-                  10 tips for a small business digital marketing strategy
-                </div>
+              <div class="categories__trending-text">
+                5 Surprising Ways to Combine Content Marketing with PPC
               </div>
             </div>
           </div>
-          <div class="categories__tags">
-            <div class="categories__tags-title">Tags</div>
-            <div class="categories__tagsbox">
-              <button class="categories__tags-button">#tips&tricks</button>
-              <button class="categories__tags-button">#strategy</button>
-              <button class="categories__tags-button">#SMM</button>
-              <button class="categories__tags-button">#business</button>
-              <button class="categories__tags-button">#PPC</button>
-              <button class="categories__tags-button">#targeting</button>
+          <div class="categories__trending-row">
+            <img class="categories__trending-img" src="/images/Blog/img2.jpg" alt="" />
+            <div class="categories__trending-info">
+              <div class="categories__trending-date">
+                <img src="/images/news/clock.svg" alt="" />&nbsp;April 9, 2020
+              </div>
+              <div class="categories__trending-text">Why SEO Is All About Content Marketing?</div>
             </div>
+          </div>
+          <div class="categories__trending-row">
+            <img class="categories__trending-img" src="/images/Blog/img3.jpg" alt="" />
+            <div class="categories__trending-info">
+              <div class="categories__trending-date">
+                <img src="/images/news/clock.svg" alt="" />&nbsp;March 12, 2020
+              </div>
+              <div class="categories__trending-text">
+                10 tips for a small business digital marketing strategy
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories__tags">
+          <div class="categories__tags-title">Tags</div>
+          <div class="categories__tagsbox">
+            <button class="categories__tags-button">#tips&tricks</button>
+            <button class="categories__tags-button">#strategy</button>
+            <button class="categories__tags-button">#SMM</button>
+            <button class="categories__tags-button">#business</button>
+            <button class="categories__tags-button">#PPC</button>
+            <button class="categories__tags-button">#targeting</button>
           </div>
         </div>
       </div>
@@ -743,13 +741,15 @@ header {
 .header__container {
   max-width: 1230px;
   margin: 0 auto;
-  padding: 20px 20px 120px;
+  padding: 20px 50px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -807,17 +807,15 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     color: white;
-    &:hover {
-      background-color: #fff;
-      color: $primary;
-    }
   }
 }
 
 .news__container {
-  max-width: 1230px;
+  max-width: 1330px;
   padding: 100px 0 48px;
   margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .news__content {
@@ -881,9 +879,6 @@ hr {
   gap: 8px;
   background-color: #ffffff00;
   align-items: center;
-  &:hover {
-    gap: 16px;
-  }
 }
 
 .categories {
@@ -909,18 +904,24 @@ hr {
 }
 
 .categories__container {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
   padding-bottom: 120px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 78px;
+  grid-template-rows: 250px 410px auto;
+  column-gap: 78px;
+  row-gap: 60px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
+
 .categories__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   row-gap: 60px;
+  grid-row: span 3;
 }
 
 .categories__hr {
@@ -976,16 +977,6 @@ hr {
   line-height: 160%;
   color: $gray800;
   background-color: #ffffff00;
-  &:hover {
-    color: $primary;
-    svg path {
-      fill: $primary;
-    }
-  }
-}
-
-.categories__trending {
-  margin: 60px 0;
 }
 
 .categories__trending-title {
@@ -1017,9 +1008,6 @@ hr {
   font-size: 16px;
   line-height: 160%;
   cursor: pointer;
-  &:hover {
-    color: $primary;
-  }
 }
 
 .categories__tags-title {
@@ -1044,7 +1032,419 @@ hr {
   line-height: 150%;
   color: $gray700;
   background-color: #ffffff00;
-  &:hover {
+}
+
+@media (max-width: 1300px) {
+  .categories__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .categories__blog {
+    order: 1;
+  }
+
+  .categories__content {
+    order: 2;
+  }
+
+  .categories__trending {
+    order: 3;
+  }
+
+  .categories__tags {
+    order: 4;
+  }
+
+  .categories__trending-date {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .categories__trending-title {
+    font-size: 26px;
+  }
+
+  .categories__trending-text {
+    font-size: 20px;
+  }
+
+  .categories__tags-button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__formbox {
+    width: 70%;
+  }
+
+  .header__form {
+    background: #424551d2;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__title {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__text {
+    font-size: 17px;
+    max-width: none;
+  }
+
+  .header__title {
+    font-size: 46px;
+  }
+
+  .header__dots {
+    display: none;
+  }
+
+  .header__lines-left {
+    top: 16vw;
+    left: 27vw;
+    width: 6vw;
+  }
+
+  .header__lines-right {
+    top: 40vw;
+    right: 13vw;
+    width: 8vw;
+  }
+
+  .header__lines4 {
+    width: 40vw;
+  }
+
+  .header__shapes {
+    right: 8vw;
+    width: 20vw;
+  }
+
+  .header__shapes2 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__formbox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .news__el-text {
+    font-size: 15px;
+  }
+
+  .news__el-title {
+    font-size: 17px;
+  }
+
+  .news__el-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__title {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .news__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .news__el {
+    max-width: none;
+    width: 100%;
+  }
+
+  .news__el-info {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .news__el-title {
+    font-size: 20px;
+  }
+
+  .news__el-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__formbox {
+    width: 100%;
+  }
+
+  .categories__container {
+    padding-bottom: 70px;
+  }
+
+  .categories__trending-date {
+    font-size: 13px;
+  }
+
+  .categories__trending-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header__lines-left {
+    top: 20vw;
+    left: 27vw;
+    width: 11vw;
+  }
+
+  .header__lines-right {
+    top: 92vw;
+    width: 12vw;
+  }
+
+  .header__lines4 {
+    display: none;
+  }
+
+  .header__shapes {
+    right: 17vw;
+    width: 28vw;
+  }
+
+  .header__shapes2 {
+    width: 39vw;
+  }
+
+  .news__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .categories__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__text {
+    font-size: 15px;
+  }
+
+  .header__form {
+    flex-direction: column;
+    width: calc(100vw - 40px);
+    input {
+      line-height: 325%;
+    }
+  }
+
+  .header__form input {
+    font-size: 14px;
+  }
+
+  .header__form button {
+    font-size: 14px;
+  }
+
+  .categories__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .categories__tags-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__lines-left {
+    display: none;
+  }
+
+  .header__lines-right {
+    display: none;
+  }
+
+  .header__shapes {
+    display: none;
+  }
+
+  .header__shapes2 {
+    display: none;
+  }
+
+  .news__el:before {
+    width: 86px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .categories__container {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__text {
+    margin-bottom: 90px;
+  }
+
+  .header__title {
+    font-size: 34px;
+  }
+
+  .header__form input {
+    font-size: 13px;
+  }
+
+  .header__form button {
+    font-size: 13px;
+  }
+
+  .news__el-text {
+    font-size: 15px;
+  }
+
+  .news__el-title {
+    font-size: 17px;
+  }
+
+  .news__el-info {
+    font-size: 11px;
+  }
+
+  .news__container {
+    padding-top: 50px;
+    padding-bottom: 36px;
+  }
+
+  .news__content {
+    margin-bottom: 36px;
+    gap: 20px;
+  }
+
+  .categories__container {
+    gap: 30px;
+  }
+
+  .categories__blog-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .categories__blog-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  .categories__page {
+    font-size: 14px;
+  }
+
+  .categories__pages {
+    gap: 15px;
+  }
+
+  .categories__trending-title {
+    font-size: 22px;
+  }
+
+  .categories__trending-date {
+    font-size: 12px;
+  }
+
+  .categories__trending-text {
+    font-size: 14px;
+  }
+
+  .categories__trending-img {
+    max-width: 80px;
+  }
+
+  .categories__tags-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .categories__tags-button {
+    font-size: 12px;
+  }
+}
+
+@media (hover: hover) {
+  .header__form button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .news__el-button:hover {
+    gap: 16px;
+  }
+
+  .categories__button-next:hover {
+    color: $primary;
+    svg path {
+      fill: $primary;
+    }
+  }
+
+  .categories__trending-text:hover {
+    color: $primary;
+  }
+
+  .categories__tags-button:hover {
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+  }
+}
+
+@media (hover: none) {
+  .header__form button:active {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .news__el-button:active {
+    gap: 16px;
+  }
+
+  .categories__button-next:active {
+    color: $primary;
+    svg path {
+      fill: $primary;
+    }
+  }
+
+  .categories__trending-text:active {
+    color: $primary;
+  }
+
+  .categories__tags-button:active {
     background-color: $primary;
     color: white;
     border: 1px solid $primary;

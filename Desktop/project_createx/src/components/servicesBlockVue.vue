@@ -150,10 +150,7 @@ $gray700: #787a80;
   text-align: center;
   color: $gray600;
   border: 2px solid #ffffff00;
-  &:hover {
-    border: 2px solid $primary;
-    color: $primary;
-  }
+  
 }
 
 .service__active {
@@ -189,11 +186,8 @@ $gray700: #787a80;
 
 @media (max-width: 500px) {
   .services__button {
-    &:last-child {
-      padding: 10px 0;
-      width: 100%;
-      grid-column: span 2;
-    }
+    padding: 6px 0;
+    font-size: 14px;
   }
 }
 
@@ -216,6 +210,20 @@ $gray700: #787a80;
 
   .services__buttonbox {
     gap: 10px;
+  }
+}
+
+@media(hover: hover) {
+  .services__button:hover {
+    border: 2px solid $primary;
+    color: $primary;
+  }
+}
+
+@media(hover: none) {
+  .services__button:active {
+    border: 2px solid $primary;
+    color: $primary;
   }
 }
 </style>

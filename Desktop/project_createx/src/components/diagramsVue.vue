@@ -98,10 +98,25 @@ $gray800: #424551;
 }
 
 @media (max-width: 800px) {
+  .agency__curcle {
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    position: relative;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
   .agency__diagrams {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 0;
   }
 
   .agency__diagrams-item {
@@ -112,6 +127,14 @@ $gray800: #424551;
 @media (max-width: 600px) {
   .agency__diagrams {
     gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .agency__curcle {
+    width: 85px;
+    height: 85px;
+    font-size: 20px;
   }
 }
 </style>

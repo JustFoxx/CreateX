@@ -204,10 +204,6 @@ $primary: #7772f1;
   letter-spacing: 0.03em;
   color: white;
   border: 2px solid $primary;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
 }
 
 @media (max-width: 1300px) {
@@ -313,7 +309,7 @@ $primary: #7772f1;
   }
 }
 
-@media(max-width:450px) {
+@media (max-width: 450px) {
   .analysis__title {
     font-size: 30px;
   }
@@ -322,6 +318,20 @@ $primary: #7772f1;
 @media (max-width: 400px) {
   .analysis__title {
     font-size: 26px;
+  }
+}
+
+@media (hover: hover) {
+  .analysis__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+}
+
+@media (hover: none) {
+  .analysis__button:active {
+    background-color: #fff;
+    color: $primary;
   }
 }
 </style>

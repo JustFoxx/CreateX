@@ -91,10 +91,6 @@ $gray700: #787a80;
   text-align: center;
   color: white;
   border: 2px solid $primary;
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-  }
 }
 
 .news__content {
@@ -137,9 +133,6 @@ $gray700: #787a80;
   gap: 8px;
   background-color: #ffffff00;
   align-items: center;
-  &:hover {
-    gap: 16px;
-  }
 }
 
 @media (max-width: 1300px) {
@@ -169,7 +162,7 @@ $gray700: #787a80;
 }
 
 @media (max-width: 1000px) {
-  .news__title{
+  .news__title {
     font-size: 36px;
   }
 }
@@ -233,6 +226,10 @@ $gray700: #787a80;
   .news__container {
     padding-bottom: 80px;
   }
+
+  .news__button {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -255,13 +252,17 @@ $gray700: #787a80;
   .news__container {
     padding-bottom: 50px;
   }
+
+  .news__button {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 400px) {
-  .news__title{
+  .news__title {
     font-size: 26px;
   }
-  
+
   .news__el-text {
     font-size: 15px;
   }
@@ -276,6 +277,28 @@ $gray700: #787a80;
 
   .news__text {
     font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .news__button:hover {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .news__el-button:hover {
+    gap: 16px;
+  }
+}
+
+@media (hover: none) {
+  .news__button:active {
+    background-color: #fff;
+    color: $primary;
+  }
+
+  .news__el-button:active {
+    gap: 16px;
   }
 }
 </style>

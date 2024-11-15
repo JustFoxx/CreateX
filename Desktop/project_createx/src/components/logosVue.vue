@@ -19,15 +19,15 @@ export default {}
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  img{
+    margin: 0 auto;
+  }
 }
 
 .seo__colored {
   filter: grayscale(100%);
   opacity: 0.8;
-  &:hover {
-    filter: grayscale(0);
-    opacity: 1;
-  }
+  
 }
 
 @media (max-width: 1000px) {
@@ -56,6 +56,20 @@ export default {}
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 20px;
+  }
+}
+
+@media(hover: hover) {
+  .seo__colored:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+@media(hover: none) {
+  .seo__colored:active {
+    filter: grayscale(0);
+    opacity: 1;
   }
 }
 </style>

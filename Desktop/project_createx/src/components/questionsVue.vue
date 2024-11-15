@@ -305,7 +305,6 @@ $primary: #7772f1;
   max-width: 20px;
   min-height: 20px;
   max-height: 20px;
-  margin-top: 5px;
   background-color: #ffffff00;
 }
 
@@ -362,13 +361,6 @@ $primary: #7772f1;
   margin-top: 60px;
   svg {
     margin: auto 0;
-  }
-  &:hover {
-    background-color: #fff;
-    color: $primary;
-    svg path {
-      fill: $primary;
-    }
   }
 }
 
@@ -486,6 +478,32 @@ $primary: #7772f1;
 
   .questions__row {
     gap: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .questions__plus {
+    margin-top: 5px;
+  }
+}
+
+@media (hover: hover) {
+  .questions__button:hover {
+    background-color: #fff;
+    color: $primary;
+    svg path {
+      fill: $primary;
+    }
+  }
+}
+
+@media (hover: none) {
+  .questions__button:active {
+    background-color: #fff;
+    color: $primary;
+    svg path {
+      fill: $primary;
+    }
   }
 }
 </style>

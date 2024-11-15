@@ -121,10 +121,7 @@ $gray800: #424551;
   background-color: #1e212c;
   border: 1px solid #1e212c;
   text-wrap: nowrap;
-  &:hover {
-    background-color: #f4f5f6;
-    color: #1e212c;
-  }
+  
 }
 
 @media (max-width: 1000px) {
@@ -195,6 +192,20 @@ $gray800: #424551;
 @media (max-width: 400px) {
   .free__title {
     font-size: 21px;
+  }
+}
+
+@media(hover: hover) {
+  .free__button:hover {
+    background-color: #f4f5f6;
+    color: #1e212c;
+  }
+}
+
+@media(hover: none) {
+  .free__button:active {
+    background-color: #f4f5f6;
+    color: #1e212c;
   }
 }
 </style>

@@ -359,6 +359,8 @@ header {
 }
 
 .header__location {
+  display: flex;
+  align-items: center;
   margin: 80px 0 40px;
   font-weight: 400;
   font-size: 14px;
@@ -426,10 +428,7 @@ header {
     letter-spacing: 0.03em;
     text-align: center;
     color: white;
-    &:hover {
-      background-color: #fff;
-      color: $primary;
-    }
+    
   }
 }
 
@@ -793,7 +792,7 @@ header {
   }
 
   .header__title {
-    font-size: 46px;
+    font-size: 40px;
   }
 
   .header__dots {
@@ -880,6 +879,7 @@ header {
   .header__title {
     display: flex;
     text-align: center;
+    font-size: 34px;
   }
 
   .above__container {
@@ -987,7 +987,7 @@ header {
 
 @media (max-width: 500px) {
   .header__title {
-    font-size: 48px;
+    font-size: 28px;
   }
 
   .header__text {
@@ -1158,5 +1158,19 @@ header {
   .free__wrapper {
     margin: 0 auto 40px;
   }
+}
+
+@media(hover: hover) {
+  .header__form button:hover {
+      background-color: #fff;
+      color: $primary;
+    }
+}
+
+@media(hover: none) {
+  .header__form button:active {
+      background-color: #fff;
+      color: $primary;
+    }
 }
 </style>

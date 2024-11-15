@@ -473,10 +473,7 @@ $gray600: #9a9ca5;
   background-color: #fff;
   display: flex;
   margin: 32px auto 0;
-  &:hover {
-    background-color: $primary;
-    color: white;
-  }
+  
 }
 
 .plans__side-item-notactive {
@@ -541,10 +538,7 @@ $gray600: #9a9ca5;
   background-color: $primary;
   display: flex;
   margin: 32px auto 0;
-  &:hover {
-    background-color: white;
-    color: $primary;
-  }
+  
 }
 
 @keyframes plans__side {
@@ -697,6 +691,30 @@ $gray600: #9a9ca5;
 @media (max-width: 400px) {
   .plans__title {
     font-size: 26px;
+  }
+}
+
+@media(hover: hover) {
+  .plans__side-button:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  .plans__center-button:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+@media(hover: none) {
+  .plans__side-button:active {
+    background-color: $primary;
+    color: white;
+  }
+  
+  .plans__center-button:active {
+    background-color: white;
+    color: $primary;
   }
 }
 </style>
