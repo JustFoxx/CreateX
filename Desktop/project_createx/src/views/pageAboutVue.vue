@@ -60,6 +60,7 @@
           poster="/images/About/aizen.jpg"
           metadata
           loop
+          playsinline
         >
           <source src="/videos/aizen.mp4" type="video/webm" />
           <source src="/videos/aizen.mp4" type="video/mp4" />
@@ -73,7 +74,7 @@
         ></transition>
         <button @click="videoMute()" class="video__mute">
           <svg
-            v-if="!videoMuted"
+            v-if="videoMuted"
             width="800px"
             height="800px"
             viewBox="0 0 24 24"
@@ -96,7 +97,7 @@
             </g>
           </svg>
           <svg
-            v-if="videoMuted"
+            v-if="!videoMuted"
             width="800px"
             height="800px"
             viewBox="0 0 24 24"
@@ -824,7 +825,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">Aliquet lectus urna viverra in odio?</div>
+                <div class="questions__question" @click="questionsActive[0] = !questionsActive[0]">Aliquet lectus urna viverra in odio?</div>
                 <div
                   class="questions__text"
                   :style="{ gridTemplateRows: questionsActive[0] ? '1fr' : '0fr' }"
@@ -872,7 +873,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">Orci commodo, viverra orci mollis ut euismod?</div>
+                <div class="questions__question" @click="questionsActive[1] = !questionsActive[1]">Orci commodo, viverra orci mollis ut euismod?</div>
                 <div
                   class="questions__text"
                   :style="{ gridTemplateRows: questionsActive[1] ? '1fr' : '0fr' }"
@@ -922,7 +923,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">
+                <div class="questions__question" @click="questionsActive[2] = !questionsActive[2]">
                   Sagittis vitae facilisi rutrum amet mauris quisque vel convallis?
                 </div>
                 <div
@@ -972,7 +973,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">
+                <div class="questions__question" @click="questionsActive[3] = !questionsActive[3]">
                   In id dolor quis nunc, urna hendrerit pharetra?
                 </div>
                 <div
@@ -1009,7 +1010,7 @@
                   />
                 </svg>
                 <svg
-                  :style="{ opacity: questionsActive[3] ? '0' : '1' }"
+                  :style="{ opacity: questionsActive[4] ? '0' : '1' }"
                   class="questions__plus-second"
                   width="20"
                   height="2"
@@ -1026,7 +1027,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">Est, ut tempus id rutrum facilisi?</div>
+                <div class="questions__question" @click="questionsActive[4] = !questionsActive[4]">Est, ut tempus id rutrum facilisi?</div>
                 <div
                   class="questions__text"
                   :style="{ gridTemplateRows: questionsActive[4] ? '1fr' : '0fr' }"
@@ -1058,7 +1059,7 @@
                   />
                 </svg>
                 <svg
-                  :style="{ opacity: questionsActive[3] ? '0' : '1' }"
+                  :style="{ opacity: questionsActive[5] ? '0' : '1' }"
                   class="questions__plus-second"
                   width="20"
                   height="2"
@@ -1075,7 +1076,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">
+                <div class="questions__question" @click="questionsActive[5] = !questionsActive[5]">
                   Amet nec in pellentesque tincidunt vulputate vivamus?
                 </div>
                 <div
@@ -1112,7 +1113,7 @@
                   />
                 </svg>
                 <svg
-                  :style="{ opacity: questionsActive[3] ? '0' : '1' }"
+                  :style="{ opacity: questionsActive[6] ? '0' : '1' }"
                   class="questions__plus-second"
                   width="20"
                   height="2"
@@ -1129,7 +1130,7 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">
+                <div class="questions__question" @click="questionsActive[6] = !questionsActive[6]">
                   Neque, cursus sapien nullam id. Massa vel arcu mauris, id vel rhoncus mattis quis?
                 </div>
                 <div
@@ -1240,11 +1241,13 @@ export default {
       }
     },
     videoMute() {
-      if (this.$refs.videoRef.volume === 1) {
-        this.$refs.videoRef.volume = 0
+      if (this.videoMuted === false) {
+        this.$refs.videoRef.muted = true
+        // this.$refs.videoRef.volume = 0
         this.videoMuted = true
       } else {
-        this.$refs.videoRef.volume = 1
+        this.$refs.videoRef.muted = false
+        // this.$refs.videoRef.volume = 1
         this.videoMuted = false
       }
     },
@@ -1863,6 +1866,7 @@ header {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
+  cursor: pointer;
 }
 
 .questions__text {
@@ -2701,7 +2705,7 @@ header {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .video__container:hover {
     .video__mute {
       display: flex;
@@ -2737,7 +2741,7 @@ header {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
   .video__mute {
     display: flex;
   }

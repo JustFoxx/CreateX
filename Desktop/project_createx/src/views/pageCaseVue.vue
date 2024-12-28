@@ -1131,7 +1131,7 @@ header {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine){
   .header__form button:hover {
     background-color: #fff;
     color: $primary;
@@ -1147,7 +1147,7 @@ header {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse){
   .header__form button:active {
     background-color: #fff;
     color: $primary;

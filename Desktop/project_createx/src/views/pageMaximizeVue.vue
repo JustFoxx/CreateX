@@ -776,7 +776,8 @@ hr {
 }
 
 .main__left-block3 {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 30px;
   margin: 48px 0 60px;
 }
@@ -1209,7 +1210,7 @@ hr {
   }
 }
 
-@media(max-width:650px) {
+@media (max-width: 650px) {
   .like__container {
     padding-top: 50px;
     padding-bottom: 0px;
@@ -1425,7 +1426,7 @@ hr {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .main__share a:hover {
     svg path {
       fill: $primary;
@@ -1465,7 +1466,7 @@ hr {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
   .main__share a:active {
     svg path {
       fill: $primary;

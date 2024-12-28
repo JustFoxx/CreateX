@@ -484,6 +484,7 @@ header {
 
 .company__marks-el {
   display: flex;
+  align-items: center;
   gap: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -492,6 +493,7 @@ header {
   color: $gray800;
   img {
     max-width: 17px;
+    max-height: 17px;
   }
 }
 
@@ -818,7 +820,7 @@ header {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .company__button:hover {
     border: 1px solid $primary;
     background-color: $primary;
@@ -830,7 +832,7 @@ header {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
   .company__button:active {
     border: 1px solid $primary;
     background-color: $primary;

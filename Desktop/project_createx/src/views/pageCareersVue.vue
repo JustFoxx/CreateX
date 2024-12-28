@@ -88,7 +88,9 @@
               </button>
               <div class="questions__info">
                 <div class="questions__question">
-                  Digital Marketing Strategist
+                  <span @click="questionsActive[0] = !questionsActive[0]"
+                    >Digital Marketing Strategist</span
+                  >
                   <button>Apply now</button>
                 </div>
                 <div
@@ -243,7 +245,10 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">Sales Executive<button>Apply now</button></div>
+                <div class="questions__question">
+                  <span @click="questionsActive[1] = !questionsActive[1]">Sales Executive</span
+                  ><button>Apply now</button>
+                </div>
                 <div
                   class="questions__textbox"
                   :style="{ gridTemplateRows: questionsActive[1] ? '1fr' : '0fr' }"
@@ -346,7 +351,9 @@
               </button>
               <div class="questions__info">
                 <div class="questions__question">
-                  Social Media Content Manager
+                  <span @click="questionsActive[2] = !questionsActive[2]"
+                    >Social Media Content Manager</span
+                  >
                   <button>Apply now</button>
                 </div>
                 <div
@@ -445,7 +452,9 @@
               </button>
               <div class="questions__info">
                 <div class="questions__question">
-                  Digital Marketing Account Manager<button>Apply now</button>
+                  <span @click="questionsActive[3] = !questionsActive[3]"
+                    >Digital Marketing Account Manager</span
+                  ><button>Apply now</button>
                 </div>
                 <div
                   class="questions__textbox"
@@ -599,7 +608,10 @@
                 </svg>
               </button>
               <div class="questions__info">
-                <div class="questions__question">SEO Strategist<button>Apply now</button></div>
+                <div class="questions__question">
+                  <span @click="questionsActive[4] = !questionsActive[4]">SEO Strategist</span
+                  ><button>Apply now</button>
+                </div>
                 <div
                   class="questions__textbox"
                   :style="{ gridTemplateRows: questionsActive[4] ? '1fr' : '0fr' }"
@@ -1714,7 +1726,7 @@ header {
     max-height: 31.3px;
   }
 
-  .find__container{
+  .find__container {
     padding-bottom: 60px;
   }
 
@@ -1727,7 +1739,7 @@ header {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .questions__question button:hover {
     background-color: $primary;
     color: white;
@@ -1747,7 +1759,7 @@ header {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
   .questions__question button:active {
     background-color: $primary;
     color: white;

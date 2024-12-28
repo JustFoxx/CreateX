@@ -711,14 +711,14 @@ header {
   }
 }
 
-@media(hover:hover) {
+@media(hover:hover) and (pointer: fine){
   .header__button:hover {
     background-color: #fff;
     color: $primary;
   }
 }
 
-@media(hover:none) {
+@media(hover:none) or (pointer: coarse){
   .header__button:active {
     background-color: #fff;
     color: $primary;

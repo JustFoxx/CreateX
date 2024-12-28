@@ -1605,6 +1605,22 @@ header {
     font-size: 29px;
   }
 
+  .header__container {
+    padding-bottom: 40px;
+  }
+
+  .header__footer-item img {
+    width: 30px;
+  }
+
+  .header__footer-item p {
+    font-size: 16px;
+  }
+
+  .header__footer {
+    gap: 15px;
+  }
+
   .agency__title {
     font-size: 26px;
   }
@@ -1642,7 +1658,25 @@ header {
   }
 }
 
-@media (hover: hover) {
+@media (max-width: 350px) {
+  .header__buttonbox-play button {
+    width: 40px;
+    height: 40px;
+    svg {
+      width: 8px;
+    }
+  }
+
+  .header__buttonbox-play p {
+    font-size: 15px;
+  }
+
+  .header__buttonbox-play {
+    gap: 12px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
   .header__button-get:hover {
     background-color: #fff;
     color: $primary;
@@ -1680,7 +1714,7 @@ header {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
   .header__button-get:active {
     background-color: #fff;
     color: $primary;

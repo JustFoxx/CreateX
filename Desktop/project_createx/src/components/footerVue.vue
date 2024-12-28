@@ -293,6 +293,8 @@ export default {}
   input {
     background-color: #ffffff00;
     color: white;
+    font-size: 14px;
+    padding-right: 8px;
   }
 }
 
@@ -439,12 +441,15 @@ export default {}
 
   .footer__awards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    width: 100%;
     li {
-      display: flex;
-      justify-content: center;
+      width: 100%;
+      // display: flex;
+      // justify-content: center;
       img {
+        width: 100%;
         border-radius: 4px;
       }
     }

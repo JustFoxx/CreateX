@@ -42,7 +42,7 @@
               </svg>
             </button>
             <div class="questions__info">
-              <div class="questions__question">Aliquet lectus urna viverra in odio?</div>
+              <div class="questions__question" @click="questionsActive[0] = !questionsActive[0]">Aliquet lectus urna viverra in odio?</div>
               <div
                 class="questions__text"
                 :style="{ gridTemplateRows: questionsActive[0] ? '1fr' : '0fr' }"
@@ -90,7 +90,7 @@
               </svg>
             </button>
             <div class="questions__info">
-              <div class="questions__question">Orci commodo, viverra orci mollis ut euismod?</div>
+              <div class="questions__question" @click="questionsActive[1] = !questionsActive[1]">Orci commodo, viverra orci mollis ut euismod?</div>
               <div
                 class="questions__text"
                 :style="{ gridTemplateRows: questionsActive[1] ? '1fr' : '0fr' }"
@@ -140,7 +140,7 @@
               </svg>
             </button>
             <div class="questions__info">
-              <div class="questions__question">
+              <div class="questions__question" @click="questionsActive[2] = !questionsActive[2]">
                 Sagittis vitae facilisi rutrum amet mauris quisque vel convallis?
               </div>
               <div
@@ -190,7 +190,7 @@
               </svg>
             </button>
             <div class="questions__info">
-              <div class="questions__question">In id dolor quis nunc, urna hendrerit pharetra?</div>
+              <div class="questions__question" @click="questionsActive[3] = !questionsActive[3]">In id dolor quis nunc, urna hendrerit pharetra?</div>
               <div
                 class="questions__text"
                 :style="{ gridTemplateRows: questionsActive[3] ? '1fr' : '0fr' }"
@@ -325,6 +325,7 @@ $primary: #7772f1;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
+  cursor: pointer;
 }
 
 .questions__text {

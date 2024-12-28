@@ -1026,7 +1026,7 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine){
   .ready__button:hover {
     border: 1px solid $primary;
     color: #ffffff;
@@ -1039,7 +1039,7 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse){
   .ready__button:active {
     border: 1px solid $primary;
     color: #ffffff;
